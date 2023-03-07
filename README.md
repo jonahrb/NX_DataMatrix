@@ -5,11 +5,11 @@ Neuplex DataMatrix Generator
 
 - Open GitHub Desktop and clone the repository
 - Open the repository in VSCode
-  - Ctrl + Shift + A
+  - `Ctrl + Shift + A`
 - Open a new terminal
   - Terminal > New Terminal
     OR
-  - Ctrl + `
+  - `` Ctrl + ` ``
 
 Create a virtual environment
 
@@ -31,6 +31,7 @@ pip install -r requirements.txt
 
 
 ## First time build
+This creates an .exe from the python file. The result will be in the `/dist` folder.
 ```
 pyinstaller --add-binary ".venv/Lib/site-packages/pylibdmtx/libdmtx-64.dll;." --icon=logo.ico --add-data "logo.ico;." --windowed .\NX_DataMatrix.py
 ```
